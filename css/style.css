@@ -24,7 +24,7 @@ h2 {
 }
 
 .container {
-	width: 1024px;
+	width: 1280px;
 	margin: 0 auto;
 }
 
@@ -61,8 +61,8 @@ h2 {
 }
 
 #mypic {
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 250px;
 	margin-right: 30px;
 /*	border:3px solid; padding: 10px; */
 }
