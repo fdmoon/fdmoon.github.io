@@ -2,100 +2,198 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Moon&apos;s Bootstrap Portfolio</title>
+    <title>Felix Moon</title>
+    <link rel="icon" sizes="32x32" href="./img/engineer_icon.png">
 
-	<link rel="icon" sizes="32x32" href="./images/fdmoon_icon.png">
-	
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Google web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,700,900,400italic,700italic,900italic|Alfa+Slab+One" rel="stylesheet" type='text/css'>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<div class="mycontent">
-		<nav class="navbar navbar-default myheader">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavPtr">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>						
-					<div class="navbar-brand myh1">Felix Moon</div>
-				</div>
-				<div class="navbar navbar-collapse collapse mynavbar" id="myNavPtr">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">About</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <div class="mycontent">
+        <!-- Nav -->
+        <nav class="navbar navbar-default navbar-fixed-top mynavbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlist">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                       
+                </div>
+                <div class="navbar navbar-collapse collapse mynavitem" id="navlist">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ECh7dBGEPCdRPiNlP-zD_0dvjqGQhooO/view?usp=sharing" target="_blank">Resume</a></li>
+                        <li><a href="#contactModal" data-toggle="modal">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-		<div class="container">
-			<div class="row">
-				<section class="col-md-8">
-					<div class="col-md-12 mysection">
-						<div class="myh2">About Me</div>
-						<hr id="hrtop">
+        <!-- Home -->
+        <section class="section-home" id="home">
+            <div class="container">
+                <h1>
+                    <span class="small">Hi, I'm</span>
+                    <em>FELIX MOON</em>
+                    <span class="small">I'm a Software Engineer &amp; Full-Stack Developer</span>
+                </h1>
+            </div>
+        </section>    
 
-						<img id="bioimg" src="./images/fdmoon_full.jpg" alt="Moon's Portrait">
-						<p>
-							I'm a control systems engineer and getting ready to be a web developer in manufacturing, IT, energy &amp; utility, and software development industries. <br><br>
-							I worked as a control systems engineer for Hyundai Heavy Industries Co., Ltd. At the time, I participated in developing a ship automation system named ACONIS, and more of my work skills were on topics from implementation of multi-threaded applications in C/C++ and PLC programming for process control. In addition, I’ve been interested in the combination of legacy industrial control systems and IT technologies including Big Data, Cloud and IoT since I joined a smart ship project in order to provide total ship service solutions. <br><br>
-						</p>
+        <!-- About -->
+        <section class="section-about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Felix Moon</h1>
+                        <div class="section-about-content">
+                            <p>I'm a Software Engineer &amp; Full-Stack Developer with a background in industrial automation.</p>
+                            <p>I worked as a control systems software engineer who was responsible for building multi-threaded applications in C/C++. In addition, I’ve been interested in web technologies to serve the web development industry.</p>
+                            <p>I'm able to build a sophisticated app with full database backend all the way from mockup to rollout based on adept knowledge in web technologies as HTML5, CSS3, JavaScript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, Express, Handlebars JS, React JS, &amp; C/C++. Git is my VCS of choice, but I'll work in Subversion if I have to. Also, I'm good at refactoring and re-engineering.</p>
+                            <p>Personally, I’m a very responsible and resourceful individual. And I'm comfortable working both on a team and independently.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
 
-						<div class="myh3">Executive Summary</div>
-						<ul>
-							<li>17-year control systems software engineer for industrial automation and process control</li>
-							<li>Development of multi-threaded ship automation applications in OOP language (C++)</li>
-							<li>Delivery and maintenance of a ship automation system named ACONIS over 1,000 ships</li>
-						</ul>
-						<br>
+        <!-- Portfolio -->
+        <section class="section-portfolio" id="portfolio">
+            <div class="container">
+                <h1>
+                    <span class="small">Hand-Picked Tales <i>from</i></span>
+                    <em>&AElig;sop&rsquo;s Fables</em>
+                    <span class="small"><i>with</i> Hand-Picked Type <i>from</i></span>
+                    <em>Google Fonts</em>
+                </h1>
 
-						<div class="myh3">Favorite Things</div>
-						<ul>
-							<li>Sports: Baseball, Basketball, Soccer</li>
-							<li>Music: Pop, R&amp;B/Soul</li>
-							<li>Food: Korean/Chinese/Mexican/Italian Food... Everything!</li>
-							<li>Hobby: Watching TV Shows, Playing Sports, Traveling</li>
-						</ul>
-					</div>
-				</section>
-				<section class="col-md-4">
-					<div class="col-md-12 mysection">
-						<div class="myh3">Connect with Me</div>
-						<hr>
+                <div class="wrapper">
+                    <div class="colophon">
+                      <p>There are over 800 <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a> available for free. But, pairing typefaces isn&rsquo;t easy and many of those fonts don&rsquo;t work for typical websites. Part of the <a href="http://25x52.com" target="_blank">25x52</a> initiative, this collaborative, ongoing project offers inspiration for using Google&rsquo;s font library.</p>
+                    </div>
+                    <div class="colophon">
+                      <p>All passages are from the <a href="http://www.gutenberg.org/ebooks/11339" target="_blank">Project Gutenberg</a> transcript of &AElig;sop&rsquo;s Fables. All photographic images are from <a href="http://unsplash.com" target="_blank">Unsplash.com</a>. </p>
+                    </div>
+                    <div class="colophon">
+                      <p>If you&rsquo;d like to contribute to this project, please <a href="https://github.com/femmebot/google-type" target="_blank">submit a pull request on Github</a>.</p>
+                      <p>Need help with Github? Want to learn more about web typography? <a href="http://25x52.com/di55ect" target="_blank">Sign up for our tutorial events.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-						<div class="sideicon">
-							<a href="https://github.com/fdmoon/" target="_blank">
-								<img class="iconimg" src="images/github_icon.png" >
-							</a>
-							<a href="https://www.linkedin.com/in/felix-daekeun-moon/" target="_blank">
-								<img class="iconimg" src="images/linkedin_icon.png" >
-							</a>
-							<a href="https://stackoverflow.com/" target="_blank">
-								<img class="iconimg" src="images/stackoverflow_icon.png" >
-							</a>
-							
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 myfooteritem">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto:daekeun.moon@gmail.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/felix-daekeun-moon/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/fdmoon/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://stackoverflow.com/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <strong>Copyright &copy; 2017 Felix Moon</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<footer>
-		&copy;Copyright 2017 Felix Moon
-	</footer>
+    <!-- Modal -->
+    <section class="modal fade section-modal" id="contactModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Contact Information
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Email:</strong></p>
+                    <p>Send me an email at <strong>daekeun.moon@gmail.com</strong>.</p>
+                    <br>
+                    <p><strong>LinkedIn:</strong></p>
+                    <p>Drop in on my LinkedIn <a href="https://www.linkedin.com/in/felix-daekeun-moon/" target="_blank">here</a>.</p>
+                    <br>
+                    <p><strong>GitHub:</strong></p>
+                    <p>Drop in on my GitHub <a href="https://github.com/fdmoon/" target="_blank">here</a>.</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <script type="text/javascript">
+        // Add smooth scrolling to all links with hash (bookmark)
+        function smoothScrollingTo(target) {
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 800, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = target;
+            });
+        }
+
+        $("a[href^='#']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior (double check)
+            if((this.hash !== "") && ($(this).attr("data-toggle") !== "modal")) {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Collapse after clicking link
+                $("#navlist").collapse('hide');
+                // Go to bookmark
+                smoothScrollingTo(this.hash);
+            }
+        });
+    </script>
 </body>
 
 </html>
-
