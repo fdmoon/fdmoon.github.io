@@ -3,8 +3,6 @@
 }
 
 body {
-	background: url(../img/coding_bg.jpg) no-repeat;
-	background-size: 100%;
 	margin: 0;
 	padding: 0;
 	zoom: 1;
@@ -29,6 +27,13 @@ footer {
 	text-align: center;
     height: 100px;
     width: 100%;
+}
+
+.mycontent {
+	background: url(../img/coding_bg.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;	
+	min-height: calc(100vh - 100px);	/* 100px is height of footer */
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -56,63 +61,40 @@ footer {
 	border: 2px solid #000;
 }
 
-.section-home { height: 100vh; padding: 320px 0; }
-.section-home h1 { font: 5em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #fff; text-align: center; font-weight: bold; }
-.section-home .small { font: 0.3em 'Playfair Display', Georgia, serif; letter-spacing: .06em; display: block; color: #fff; }
-.section-home h1 em { display: block; font-style: normal; margin: 20px; }
-
-.section-about { background: url(../img/fdmoon_full.jpg) no-repeat; background-size: cover; background-attachment: fixed; width: 100%; height: 100vh; padding: 120px 0; }
-.section-about h1 { font: 3.5em 'Abril Fatface', Georgia, serif; color: #000; margin-bottom: 30px; font-weight: bold; padding-left: 10px; }
-.section-about p { font: 1.3em 'Playfair Display', Georgia, serif; letter-spacing: .06em; display: block; color: #000; margin-bottom: 30px; }
-.section-about-content { background: rgba(255,255,255,0.7); border-radius: 25px; padding: 20px; border: 3px solid #f0f0f0; }
-
-
-
-
-/*.section-portfolio { height: 100vh; }*/
-.section-portfolio h1 { font: 5em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #693; margin: 200px 0 90px 0; text-align: center; }
-.section-portfolio .small { font: 0.3em 'Playfair Display', Georgia, serif; letter-spacing: .06em; margin-left: 30px; display: block; }
-.section-portfolio h1 em { display: block; font-style: normal; }
-.section-portfolio h1 i { text-transform: lowercase; letter-spacing: 0; color: #7a6; }
-.section-portfolio .divider { width: 30px; padding: 30px 0 0 0; border-top: 1px solid #999; margin: 30px auto 0 auto; }
-.section-portfolio .wrapper { width: 100%; text-align: center; margin: 0 auto 120px auto; }
-.section-portfolio .colophon { width: 300px; display: inline-block; vertical-align: top; text-align: left; margin: 0 7px 30px 10px; }
-.section-portfolio p { color: #999; font: 1em 'Alegreya', Georgia, serif; margin: 0 auto 10px auto; max-width: 460px; }
-.section-portfolio .caption { margin-top: 180px; }
-.section-portfolio a { color: #000; text-decoration: none; }
-.section-portfolio a:hover { background-color: #ddd; }
-
-
-
-
-.section-modal h1 { font: 1.6em 'Abril Fatface', Georgia, serif; color: #000; }
-.section-modal p { font: 1.2em 'Playfair Display', Georgia, serif; letter-spacing: .06em; display: block; color: #000; }
-
 .myfooteritem {
 	padding-top: 15px;
 }
 
-.mycontent {
-	min-height: calc(100vh - 100px);	/* 100px is height of footer */
-}
+.section-home { height: 100vh; padding: 340px 0; }
+.section-home h1 { font: 5em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #fff; text-align: center; font-weight: bold; }
+.section-home .small { font: 0.3em 'Playfair Display', Georgia, serif; letter-spacing: .06em; display: block; color: #fff; }
+.section-home h1 em { display: block; font-style: normal; margin: 20px; }
+
+.section-about { background: url(../img/coding_bg.jpg) no-repeat; background-size: cover; background-attachment: fixed; width: 100%; height: 100vh; padding: 140px 0; }
+.section-about h1 { font: 4em 'Abril Fatface', Georgia, serif; color: #fff; margin-bottom: 30px; font-weight: bold; padding-left: 10px; }
+.section-about p { font: 1.6em 'Alegreya', Georgia, serif; color: #fff; margin-bottom: 40px; }
+.section-about-content {  border-radius: 25px; padding: 20px; border: 3px solid #f0f0f0; }
+
+.section-portfolio h1 { font: 4em 'Abril Fatface', Georgia, serif; color: #fff; margin-bottom: 30px; font-weight: bold; padding-left: 20px; }
+.section-portfolio { background: url(../img/coding_bg.jpg) no-repeat; background-size: cover; background-attachment: fixed; width: 100%; height: 100%; padding: 100px 0; }
+.section-portfolio h2 { font: 2em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #693;  }
+.section-portfolio p { color: #999; font: 1.3em 'Alegreya', Georgia, serif; }
+
+.section-modal h1 { font: 1.6em 'Abril Fatface', Georgia, serif; color: #000; }
+.section-modal p { font: 1.2em 'Alegreya', Georgia, serif; letter-spacing: .06em; display: block; color: #000; }
 
 @media screen and (max-width: 992px) {
 
 }
 
 @media screen and (max-width: 768px) {
-	body { background-size: contain; background-repeat: repeat-y; }
+	.mycontent { background-repeat: repeat-y; }
 
 	.section-home { padding: 160px 0; }
 
-	.section-about { background-size: contain; background-repeat: repeat-y; background-attachment: fixed; padding: 80px 0;}
-	.section-about h1 { font-size: 3em; text-shadow: 0 0 3px #fff; margin-bottom: 15px; }
-	.section-about p { font-size: 1.1em; margin-bottom: 5px; }
+	.section-about { background-repeat: repeat-y; background-attachment: fixed; padding: 80px 0;}
+	.section-about h1 { font-size: 2.8em; text-shadow: 0 0 3px #fff; margin-bottom: 15px; }
+	.section-about p { font-size: 1.2em; margin-bottom: 6px; }
 	.section-about-content { padding: 10px; }
-
-	.section-portfolio { background-color: #fff; background-size: cover; }
-
-
 }
-
 

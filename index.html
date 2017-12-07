@@ -58,9 +58,12 @@
         <section class="section-about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h1>Felix Moon</h1>
-                        <div class="section-about-content">
+                    <h1>Felix Moon</h1>
+                    <div class="col-md-12 section-about-content">
+                        <div class="col-md-4">
+                            <img src="./img/fdmoon_full.jpg" alt="Portrait" width="100%">
+                        </div>
+                        <div class="col-md-8">
                             <p>I'm a Software Engineer &amp; Full-Stack Developer with a background in industrial automation.</p>
                             <p>I worked as a control systems software engineer who was responsible for building multi-threaded applications in C/C++. In addition, I’ve been interested in web technologies to serve the web development industry.</p>
                             <p>I'm able to build a sophisticated app with full database backend all the way from mockup to rollout based on adept knowledge in web technologies as HTML5, CSS3, JavaScript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, Express, Handlebars JS, React JS, &amp; C/C++. Git is my VCS of choice, but I'll work in Subversion if I have to. Also, I'm good at refactoring and re-engineering.</p>
@@ -72,25 +75,108 @@
         </section>    
 
         <!-- Portfolio -->
-        <section class="section-portfolio" id="portfolio">
-            <div class="container">
-                <h1>
-                    <span class="small">Hand-Picked Tales <i>from</i></span>
-                    <em>&AElig;sop&rsquo;s Fables</em>
-                    <span class="small"><i>with</i> Hand-Picked Type <i>from</i></span>
-                    <em>Google Fonts</em>
-                </h1>
-
-                <div class="wrapper">
-                    <div class="colophon">
-                      <p>There are over 800 <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a> available for free. But, pairing typefaces isn&rsquo;t easy and many of those fonts don&rsquo;t work for typical websites. Part of the <a href="http://25x52.com" target="_blank">25x52</a> initiative, this collaborative, ongoing project offers inspiration for using Google&rsquo;s font library.</p>
+        <section class="section-portfolio clearfix" id="portfolio">
+            <h1>Portfolio</h1>
+            <div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="https://choosr-project-teamfour.herokuapp.com/">
+                                <img src="./img/choosr.png" width=100%>
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <h2>Choosr</h2>
+                            <ul>
+                                <li>When a person searches for a product on the app, two options are returned. It gives people searching for products online a simultaneous local option. Product searches return results from both the Amazon API and Goodzer (local shopping API)</li>
+                                <li>Lead Developer of a group of four</li>
+                                <li><a href="https://choosr-project-teamfour.herokuapp.com/">https://choosr-project-teamfour.herokuapp.com/</a></li>
+                            </ul>
+                            <!-- <button type="button" class="btn btn-primary" width="100%">Drop In</button> -->
+                        </div>
                     </div>
-                    <div class="colophon">
-                      <p>All passages are from the <a href="http://www.gutenberg.org/ebooks/11339" target="_blank">Project Gutenberg</a> transcript of &AElig;sop&rsquo;s Fables. All photographic images are from <a href="http://unsplash.com" target="_blank">Unsplash.com</a>. </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="http://eat-da-burger-sequel.herokuapp.com/">
+                                <img src="./img/eat-da-burger.png" width=100%>
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <h2>Eat-Da-Burger</h2>
+                            <ul>
+                                <li>A restaurant app that lets users input the names of burgers they'd like to eat. It’s created with MySQL, Node, Express, Handlebars and Sequelize following the MVC design pattern.</li>
+                                <li>Sole Developer</li>
+                                <li><a href="http://eat-da-burger-sequel.herokuapp.com/">http://eat-da-burger-sequel.herokuapp.com/</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="colophon">
-                      <p>If you&rsquo;d like to contribute to this project, please <a href="https://github.com/femmebot/google-type" target="_blank">submit a pull request on Github</a>.</p>
-                      <p>Need help with Github? Want to learn more about web typography? <a href="http://25x52.com/di55ect" target="_blank">Sign up for our tutorial events.</a></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="https://the-brain-dump.herokuapp.com/">
+                                <img src="./img/the-brain-dump.png" width=100%>
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <h2>The Brain Dump</h2>
+                            <ul>
+                                <li>A bulletin board/reddit kind of social media app for all the things you wish you could say, but can't. The users will create a login, and then be directed to a timeline screen where users can post ideas, pictures, or other files that they wish to share on the internet with each post disappearing after 24 hours.</li>
+                                <li>Backend Developer of a group of five</li>
+                                <li><a href="https://the-brain-dump.herokuapp.com/">https://the-brain-dump.herokuapp.com/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">   
+                        <div class="panel-heading">
+                            <a href="https://austin-news-scraper.herokuapp.com/">
+                                <img src="./img/austin-news-scraper.png" width=100%>
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <h2>Austin News Scraper</h2>
+                            <ul>
+                                <li>A web app that lets users view and leave comments on the latest news. You don’t have to write any articles actually; instead, it’ll scrape news from another site and save to MongoDB with Mongoose and Cheerio packages.</li>
+                                <li>Sole Developer</li>
+                                <li><a href="https://austin-news-scraper.herokuapp.com/">https://austin-news-scraper.herokuapp.com/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">   
+                        <div class="panel-heading">
+                            <img src="./img/dummy.png" width=100%>
+                        </div>
+                        <div class="panel-body">
+                            <h2>Next Project #1</h2>
+                            <ul>
+                                <li><br><br><br></li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">   
+                        <div class="panel-heading">
+                            <img src="./img/dummy.png" width=100%>
+                        </div>
+                        <div class="panel-body">
+                            <h2>Next Project #2</h2>
+                            <ul>
+                                <li><br><br><br></li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
