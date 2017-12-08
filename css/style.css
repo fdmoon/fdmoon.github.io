@@ -101,6 +101,9 @@ a.mybutton:hover {
 
 .section-modal h1 { font: 1.6em 'Abril Fatface', Georgia, serif; color: #000; }
 .section-modal p { font: 1.2em 'Alegreya', Georgia, serif; letter-spacing: .06em; display: block; color: #000; }
+.section-modal button {
+	font-weight: bold;
+}
 
 @media screen and (max-width: 992px) {
 	#mybioimage {
