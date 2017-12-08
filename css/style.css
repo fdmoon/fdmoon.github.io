@@ -41,7 +41,7 @@ footer {
 }
 
 .mynavbar {
-	background-color: #fff;
+	background-color: #f7f7f7;
 	padding: 2px;
     width: 100%;
     margin-bottom: 0px;
@@ -61,6 +61,25 @@ footer {
 	border: 2px solid #000;
 }
 
+.mypanel {
+	background-color: #000;
+	color: white;
+	padding: 20px;
+}
+
+a.mybutton {
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+	border: 2px solid #fff;
+	width: 45% !important;
+}
+
+a.mybutton:hover {
+	color: #000;
+	background-color: #fff;
+}
+
 .myfooteritem {
 	padding-top: 15px;
 }
@@ -77,19 +96,25 @@ footer {
 
 .section-portfolio { background: url(../img/coding_bg.jpg) no-repeat; background-size: cover; background-attachment: fixed; width: 100%; height: 100%; padding: 100px 0; }
 .section-portfolio h1 { font: 4em 'Abril Fatface', Georgia, serif; color: #fff; margin-bottom: 30px; font-weight: bold; padding-left: 20px; }
-.section-portfolio h2 { font: 2em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #693;  }
+.section-portfolio h2 { font: 1.8em 'Abril Fatface', Georgia, serif; text-transform: uppercase; color: #693;  }
 .section-portfolio p { color: #999; font: 1.3em 'Alegreya', Georgia, serif; }
 
 .section-modal h1 { font: 1.6em 'Abril Fatface', Georgia, serif; color: #000; }
 .section-modal p { font: 1.2em 'Alegreya', Georgia, serif; letter-spacing: .06em; display: block; color: #000; }
 
 @media screen and (max-width: 992px) {
+	#mybioimage {
+		margin: 15px 0 30px 0;
+	}
 
+	.section-about p {
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 768px) {
-	.mybioimage {
-		margin: 20px 0;
+	#mybioimage {
+		margin: 15px 0 20px 0;
 	}
 
 	.mycontent { background-repeat: repeat-y; }
