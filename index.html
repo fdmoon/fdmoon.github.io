@@ -9,7 +9,7 @@
     <link rel="icon" sizes="32x32" href="./img/engineer_icon.png">
 
     <!-- Google web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,700,900,400italic,700italic,900italic|Alfa+Slab+One" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,700,900,400italic,700italic,900italic|Alfa+Slab+One|Holtwood+One+SC" rel="stylesheet" type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,13 +25,15 @@
         <nav class="navbar navbar-default navbar-fixed-top mynavbar">
             <div class="container">
                 <div class="navbar-header">
+                    <a id="header-brand" class="navbar-brand mybrand" href="">Felix Moon</a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlist">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>                       
+                    </button>
                 </div>
                 <div class="navbar navbar-collapse collapse mynavitem" id="navlist">
+                    <a id="body-brand" class="navbar-brand mybrand" href="">Felix Moon</a>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -48,7 +50,7 @@
             <div class="container">
                 <h1>
                     <span class="small">Hi, I'm</span>
-                    <em>FELIX MOON</em>
+                    <em>Felix Moon</em>
                     <span class="small">I'm a Software Engineer &amp; Full-Stack Developer</span>
                 </h1>
             </div>
@@ -163,16 +165,20 @@
                     </div>
                     <div class="col-md-4">
                         <div class="panel panel-default mypanel">
-                            <h2>To Be Continued...</h2>
-                            <img src="./img/dummy.png" width=100%>
+                            <h2>Homation (Ongoing)</h2>
+                            <!-- <a href="#" target="_blank"> -->
+                                <img src="./img/dummy.png" width=100%>
+                            <!-- </a> -->
                             <ul>
-                                <li><br><br></li>
-                                <li style="color: yellow"><br><br></li>
-                                <li>&nbsp;</li>
+                                <li>A dashboard app to build a Smart Home<br><br></li>
+                                <li style="color: yellow">MERN stack<br><br></li>
+                                <li>Full-Stack Developer of a group of two</li>
                             </ul>
                             <br>
-                            <a class="btn btn-default mybutton" href="#" role="button">View on Heroku</a>
-                            <a class="btn btn-default mybutton" href="#" role="button">Source Code</a>
+                            <!-- <a class="btn btn-default mybutton" href="#" target="_blank" role="button">View on Heroku</a> -->
+                            <!-- <a class="btn btn-default mybutton" href="#" target="_blank" role="button">Source Code</a> -->
+                            <a class="btn btn-default mybutton" href="#portfolio" role="button">View on Heroku</a>
+                            <a class="btn btn-default mybutton" href="#portfolio" role="button">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +256,7 @@
                             </a>
                         </li>
                     </ul>
-                    <strong>Copyright &copy; 2017 Felix Moon</strong>
+                    <strong>Copyright &copy; 2017</strong>
                 </div>
             </div>
         </div>
@@ -283,31 +289,9 @@
         </div>
     </section>    
 
-    <script type="text/javascript">
-        // Add smooth scrolling to all links with hash (bookmark)
-        function smoothScrollingTo(target) {
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 800, function(){
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = target;
-            });
-        }
+    <script type="text/javascript" src="./js/index.js"></script>
 
-        $("a[href^='#']").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior (double check)
-            if((this.hash !== "") && ($(this).attr("data-toggle") !== "modal")) {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-                // Collapse after clicking link
-                $("#navlist").collapse('hide');
-                // Go to bookmark
-                smoothScrollingTo(this.hash);
-            }
-        });
-    </script>
 </body>
 
 </html>
+

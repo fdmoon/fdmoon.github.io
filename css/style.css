@@ -36,7 +36,7 @@ footer {
 	min-height: calc(100vh - 100px);	/* 100px is height of footer */
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
 	color: #000;
 }
 
@@ -45,6 +45,23 @@ footer {
 	padding: 2px;
     width: 100%;
     margin-bottom: 0px;
+}
+
+.mybrand {
+	color: #fff !important;
+	background-color: #000 !important;
+	font-family: 'Holtwood One SC', serif;
+	font-size: 2em;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#header-brand {
+	display: none;
+}
+
+#body-brand {
+	display: inline;
 }
 
 .mynavitem {
@@ -57,7 +74,7 @@ footer {
 	font-weight: bold;
 }
 
-.mynavitem a:hover {
+.mynavitem li a:hover {
 	border: 2px solid #000;
 }
 
@@ -75,7 +92,7 @@ footer {
 	border: none;
 }
 
-a.mybutton {
+a.mybutton, a.mybutton:visited {
 	font-weight: bold;
 	color: #fff;
 	background-color: #000;
@@ -130,6 +147,14 @@ a.mybutton-ex {
 }
 
 @media screen and (max-width: 768px) {
+	#header-brand {
+		display: inline;
+	}
+
+	#body-brand {
+		display: none;
+	}
+
 	#mybioimage {
 		margin: 15px 0 20px 0;
 	}
