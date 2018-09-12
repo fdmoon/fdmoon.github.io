@@ -119,8 +119,8 @@ a.mybutton-ex {
 .section-home h1 em { display: block; font-style: normal; margin: 20px; }
 
 .section-about { background: url(../img/coding_bg.jpg) no-repeat; background-size: 100%/*cover*/; background-attachment: fixed; width: 100%; height: 100vh; padding: 140px 0; }
-.section-about h1 { font: 4em 'Abril Fatface', Georgia, serif; color: #fff; margin-bottom: 30px; font-weight: bold; }
-.section-about p { font: 1.6em 'Alegreya', Georgia, serif; color: #fff; margin-bottom: 40px; }
+.section-about h1 { font: 3em 'Abril Fatface', Georgia, serif; color: #fff; margin-bottom: 30px; font-weight: bold; }
+.section-about p { font: 1.3em 'Alegreya', Georgia, serif; color: #fff; margin-bottom: 40px; }
 .section-about-content { border-radius: 25px; padding: 20px; border: 3px solid #f0f0f0; }
 
 .section-portfolio { background: url(../img/coding_bg.jpg) no-repeat; background-size: 100%/*cover*/; background-attachment: fixed; width: 100%; height: 100%; padding: 100px 0; }
